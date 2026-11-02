@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.castorama.fr/mastic-bain-et-cuisine-rubson-blanc-280ml/5410091628840_CAFR.prd",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -211,7 +211,7 @@ response = requests.get(
     params={
         "query": "joint-silicone",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
